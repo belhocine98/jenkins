@@ -8,8 +8,8 @@ pipeline {
             steps {
                 script {
                     
-                    sh 'echo "Téléchargement des fichiers requis..."'
-                    sh 'ls -al'
+                    bat 'echo "Téléchargement des fichiers requis..."'
+                    // sh 'ls -al'
 
                 }
             }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     
-                    sh '''
+                    bat '''
     newman run reqres.postman_collection.json
 '''
 
