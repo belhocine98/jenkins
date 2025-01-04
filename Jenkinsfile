@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'postman/newman:alpine'
-        }
-    }
+    agent any 
 
 
 
